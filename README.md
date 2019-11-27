@@ -17,3 +17,7 @@ npm run watch
 # step 2
 npm run start
 ```
+
+## publish
+
+Publishing Firefox extension requires apikey, save to apikey.js
