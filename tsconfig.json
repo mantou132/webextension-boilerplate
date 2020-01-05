@@ -10,7 +10,7 @@
     "allowSyntheticDefaultImports": true,
     "target": "es6",
     "lib": ["es2018", "dom"],
-    "typeRoots": ["./src/types"]
+    "typeRoots": ["node_mobules/@types", "src/types"],
   },
   "include": ["src"]
 }
