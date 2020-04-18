@@ -7,10 +7,10 @@
     "sourceMap": true,
     "module": "esnext",
     "moduleResolution": "node",
+    "resolveJsonModule": true,
     "allowSyntheticDefaultImports": true,
     "target": "es6",
-    "lib": ["es2018", "dom"],
-    "typeRoots": ["node_mobules/@types", "src/types"],
+    "lib": ["es2018", "dom"]
   },
   "include": ["src"]
 }
