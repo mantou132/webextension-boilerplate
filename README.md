@@ -11,11 +11,15 @@ build:
 ## development
 
 ```bash
-# step 1
-npm run watch
-# open a new terminal
-# step 2
+# install dependencies
+npm install
+# start develop
 npm run start
+```
+
+Build:
+```bash
+npm run build:zip
 ```
 
 ## publish

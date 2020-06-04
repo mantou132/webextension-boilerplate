@@ -10,7 +10,7 @@ module.exports = {
   verbose: true,
   run: {
     firefox: 'nightly',
-    startUrl: ['about:debugging', 'http://example.com/'],
+    startUrl: ['about:debugging', 'https://example.com/'],
   },
   sign: {
     apiKey: api.apiKey || '',
