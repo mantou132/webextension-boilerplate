@@ -3,6 +3,9 @@ const path = require('path');
 const CopyWebpackPlugin = require('copy-webpack-plugin');
 const { CleanWebpackPlugin } = require('clean-webpack-plugin');
 
+/**
+ * @type {import('webpack/declarations/WebpackOptions').WebpackOptions}
+ */
 module.exports = {
   entry: {
     background: './src/background.ts',
@@ -29,7 +32,7 @@ module.exports = {
   },
   plugins: [
     new CleanWebpackPlugin({ cleanStaleWebpackAssets: false }),
-    new CopyWebpackPlugin([{ from: './public', to: './' }]),
+    new CopyWebpackPlugin({ patterns: [{ from: './public', to: './' }] }),
   ],
   devtool: 'source-map',
 };
