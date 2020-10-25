@@ -4,14 +4,13 @@
   "description": "webextension boilerplate",
   "scripts": {
     "lint": "tsc --noEmit && eslint --ext .ts --fix src/",
-    "start:firefox": "web-ext --config web-ext.config.js run",
-    "start:chromium": "npm run start:firefox -- -t chromium",
-    "start": "concurrently npm:watch npm:start:chromium",
     "build": "webpack --mode=development",
+    "watch": "npm run build -- --watch",
     "postinstall": "npm run build",
-    "build:xpi": "npm run build && web-ext --config web-ext.config.js sign",
     "build:zip": "npm run build && web-ext --config web-ext.config.js build",
-    "watch": "npm run build -- --watch"
+    "firefox": "web-ext --config web-ext.config.js run",
+    "chromium": "npm run firefox -- -t chromium",
+    "start": "concurrently npm:watch npm:chromium"
   },
   "repository": {
     "type": "git",
