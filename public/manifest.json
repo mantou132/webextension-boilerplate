@@ -5,5 +5,8 @@
   "description": "webextension boilerplate",
   "background": {
     "scripts": ["background.js"]
+  },
+  "icons": {
+    "512": "icon.png"
   }
 }
