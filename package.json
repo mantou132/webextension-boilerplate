@@ -8,6 +8,7 @@
     "watch": "npm run build -- --watch",
     "postinstall": "npm run build",
     "build:zip": "npm run build && web-ext --config web-ext.config.js build",
+    "release": "npx mantou132/release#web-ext -w public patch",
     "firefox": "web-ext --config web-ext.config.js run",
     "chromium": "npm run firefox -- -t chromium",
     "start": "concurrently npm:watch npm:chromium"
