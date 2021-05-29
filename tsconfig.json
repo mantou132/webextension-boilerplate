@@ -9,6 +9,7 @@
     "moduleResolution": "node",
     "resolveJsonModule": true,
     "allowSyntheticDefaultImports": true,
+    "skipLibCheck": true,
     "target": "es6",
     "lib": ["es2018", "dom"]
   },

@@ -4,7 +4,7 @@ const CopyWebpackPlugin = require('copy-webpack-plugin');
 const { CleanWebpackPlugin } = require('clean-webpack-plugin');
 
 /**
- * @type {import('webpack/declarations/WebpackOptions').WebpackOptions}
+ * @type {import('webpack').Configuration}
  */
 module.exports = {
   entry: {

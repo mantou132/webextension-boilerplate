@@ -12,12 +12,13 @@ build:
 
 ```bash
 # install dependencies
-npm install
+yarn
 # start develop
-npm run start
+yarn run start
 ```
 
 Build:
+
 ```bash
-npm run build:zip
+yarn run build:zip
 ```

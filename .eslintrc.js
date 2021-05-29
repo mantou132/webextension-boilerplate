@@ -5,14 +5,14 @@ module.exports = {
     'plugin:import/warnings',
     'plugin:import/typescript',
     'plugin:@typescript-eslint/recommended',
-    'prettier/@typescript-eslint',
-    'plugin:prettier/recommended'
+    'plugin:prettier/recommended',
   ],
   parserOptions: {
     ecmaVersion: 2018,
     sourceType: 'module',
   },
   rules: {
+    'no-console': 1,
     // https://github.com/benmosher/eslint-plugin-import/blob/HEAD/docs/rules/order.md
     'import/order': ['error', { 'newlines-between': 'always-and-inside-groups' }],
     '@typescript-eslint/no-var-requires': 'off',
