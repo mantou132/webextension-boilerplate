@@ -11,7 +11,8 @@
     "release": "npx mantou132/release#web-ext -w public patch",
     "firefox": "web-ext --config web-ext.config.js run",
     "chromium": "npm run firefox -- -t chromium",
-    "start": "concurrently npm:watch npm:chromium"
+    "start": "concurrently npm:watch npm:chromium",
+    "prepare": "husky install"
   },
   "repository": {
     "type": "git",
@@ -50,11 +51,6 @@
     "web-ext": "^6.1.0",
     "webpack": "^5.38.1",
     "webpack-cli": "^4.7.0"
-  },
-  "husky": {
-    "hooks": {
-      "pre-commit": "lint-staged"
-    }
   },
   "lint-staged": {
     "*.ts": "npm run lint"
